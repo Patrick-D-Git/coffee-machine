@@ -22,5 +22,5 @@ while coffee_machine_on:
         drink = coffee_menu.find_drink(user_coffee_choice)
 
         if coffee_machine.is_resource_sufficient(drink):  # checks if it has enough ingredients/resource
-            if money_dispenser.make_payment(money_dispenser.money_received):  # checks money received
+            if money_dispenser.make_payment(drink.cost):  # checks money received
                 coffee_machine.make_coffee(drink)  # creates the coffee
