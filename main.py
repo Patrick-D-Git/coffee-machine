@@ -18,8 +18,9 @@ while coffee_machine_on:
     elif user_coffee_choice == "report":
         coffee_machine.report()
     else:
+        # Finds the drink information and assign it to 'drink'
         drink = coffee_menu.find_drink(user_coffee_choice)
 
-        if coffee_machine.is_resource_sufficient(drink):
-            if money_dispenser.make_payment(money_dispenser.money_received):
-                coffee_machine.make_coffee(drink)
+        if coffee_machine.is_resource_sufficient(drink):  # checks if it has enough ingredients/resource
+            if money_dispenser.make_payment(money_dispenser.money_received):  # checks money received
+                coffee_machine.make_coffee(drink)  # creates the coffee
