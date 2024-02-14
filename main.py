@@ -2,9 +2,9 @@ from menu import Menu
 from coffee_maker import CoffeeMaker
 from money_machine import MoneyMachine
 
-coffee_machine = CoffeeMaker()
-coffee_menu = Menu()
-money_dispenser = MoneyMachine()
+coffee_machine = CoffeeMaker()  # coffeeMaker class , coffee_machine object
+coffee_menu = Menu()  # Menu class, coffee_menu object
+money_dispenser = MoneyMachine()  # MoneyMachine class , money_dispenser object
 
 
 coffee_machine_on = True
