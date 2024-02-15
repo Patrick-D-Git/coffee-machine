@@ -14,6 +14,7 @@ while coffee_machine_on:
     user_coffee_choice = input("What would you like? 'espresso/latte/cappuccino': ")
 
     if user_coffee_choice == "off":
+        print("Turning off..")
         coffee_machine_on = False
     elif user_coffee_choice == "report":
         coffee_machine.report()  # shows how much ingredients left
