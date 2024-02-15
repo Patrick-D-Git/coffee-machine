@@ -17,6 +17,7 @@ while coffee_machine_on:
         coffee_machine_on = False
     elif user_coffee_choice == "report":
         coffee_machine.report()
+        money_dispenser.report()
     else:
         # Finds the drink information and assign it to 'drink'
         drink = coffee_menu.find_drink(user_coffee_choice)
