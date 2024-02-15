@@ -16,8 +16,8 @@ while coffee_machine_on:
     if user_coffee_choice == "off":
         coffee_machine_on = False
     elif user_coffee_choice == "report":
-        coffee_machine.report()
-        money_dispenser.report()
+        coffee_machine.report()  # shows how much ingredients left
+        money_dispenser.report()  # shows how much profit accumulated
     else:
         # Finds the drink information and assign it to 'drink'
         drink = coffee_menu.find_drink(user_coffee_choice)
